@@ -36,7 +36,7 @@
 }
 
 .input-box .input-sbox{
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .input-box .input-sbox p{
@@ -69,7 +69,6 @@
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 #up,#ep,#pp,#pp21,#pp22{
