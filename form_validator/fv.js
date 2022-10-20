@@ -27,6 +27,24 @@ function sub(){
         var emailtext=document.getElementById("ep");
         emailtext.style.visibility = "visible";
     }
+    else{
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(re.test(email_v.trim())){
+            email.style.outlineColor = "#2ECC71";
+            email.style.border = "solid 2px #2ECC71";
+            email.style.borderRadius = "5px";
+            var emailtext=document.getElementById("ep");
+            emailtext.style.visibility = "hidden";
+        }
+        else{
+            email.style.outlineColor = "#E74C3C";
+            email.style.border = "solid 2px #E74C3C";
+            email.style.borderRadius = "5px";
+            var emailtext=document.getElementById("ep");
+            emailtext.style.visibility = "visible";
+        }
+    }
+    
 
     var password=document.getElementById("password")
     var password_v=password.value;
@@ -44,6 +62,13 @@ function sub(){
         password.style.borderRadius = "5px";
         var passwordtext=document.getElementById("pp");
         passwordtext.style.visibility = "hidden";
+    }
+    else{
+        password.style.outlineColor = "#E74C3C";
+        password.style.border = "solid 2px #E74C3C";
+        password.style.borderRadius = "5px";
+        var passwordtext=document.getElementById("pp");
+        passwordtext.style.visibility = "visible";
     }
 
     var password2=document.getElementById("password2")
