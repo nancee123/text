@@ -15,12 +15,15 @@ seat.onclick = function(e){
             i--;
         }
         seatnum.innerHTML = i;
-        
-        var clickmoney = selectmoney.selectedIndex;
-        num = i*selectmoney[clickmoney].value;
-        money.innerHTML = num;
-        console.log(num);
     }
-    
-    
+    var clickmoney = selectmoney.selectedIndex;
+    num = i*selectmoney[clickmoney].value;
+    money.innerHTML = num;
+    console.log(num);
 };
+selectmoney.onclick = function(e){
+    var clickmoney = selectmoney.selectedIndex;
+    num = i*selectmoney[clickmoney].value;
+    money.innerHTML = num;
+    console.log(num);
+}

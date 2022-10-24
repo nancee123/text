@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #666666;
+    color: #fff;
+}
+
+.video-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.video-box h1{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.video-box .video-view{
+    width: 600px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.video-box .video-view video{
+    width: 600px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.video-box .video-view .progress-bar{
+    height: 50px;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    font-size: 25px;
+}
+
+.play{
+    color: #28A745;
+}
+.video-box .video-view .progress-bar .replay{
+    width: 23px;
+    height: 23px;
+    background-color: #DC3545;
+}
+.video-box .video-view .progress-bar .progress-start{
+    width: 15px;
+    height: 35px;
+    background-color: #ffffff;
+}
+.video-box .video-view .progress-bar .progress{
+    width: 300px;
+    height: 20px;
+    background-color: #3071A9;
+}
